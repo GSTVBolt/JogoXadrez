@@ -9,7 +9,7 @@ namespace Xadrez {
 
             p = new Posicao(3, 4);
 
-            Console.WriteLine("Posicao " + p);
+            Console.WriteLine("Posicao: " + p);
 
             Console.ReadLine();
         }
