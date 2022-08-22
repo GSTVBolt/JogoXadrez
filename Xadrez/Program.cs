@@ -13,20 +13,17 @@ namespace Xadrez {
 
                     try {
                         Console.Clear();
-                        Tela.ImprimirTabuleiro(partida.tab);
-                        Console.WriteLine();
-                        Console.WriteLine("Turno: " + partida.turno);
-                        Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                        Tela.imprimirPartida(partida);
 
                         Console.WriteLine();
                         Console.Write("Origem: ");
                         Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
                         partida.validarPosicaoDeOrigem(origem);
 
-                        bool[,] possicoesPossiveis = partida.tab.peca(origem).movimentosPossiveis();
+                        bool[,] posicoesPossiveis = partida.tab.peca(origem).movimentosPossiveis();
 
                         Console.Clear();
-                        Tela.ImprimirTabuleiro(partida.tab, possicoesPossiveis);
+                        Tela.ImprimirTabuleiro(partida.tab, posicoesPossiveis);
 
                         Console.WriteLine();
                         Console.Write("Destino: ");
