@@ -1,6 +1,6 @@
 ﻿using tabuleiro;
 
-namespace Xadrez.JogoXadrez {
+namespace JogoXadrez {
     internal class Bispo : Peca{
 
         public Bispo(Tabuleiro tab, Cor cor) : base(tab, cor) {
